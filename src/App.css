@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 100px;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  height: 251px;
+  width: 235px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    float: inline-start;
+    font-size: 12px;
+    line-height: 14.5px;
+    font-weight: 500;
+    color: #252525;
+  }
+
+  input, select {
+    width: 195px;
+    height: 33px;
+  }
+
+  input {
+    margin-top: 4px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  input:focus {
+    outline: 1px solid #4CAF50;
+}
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  select {
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  select option {
+    font-size: 12px;
+  }
+
+  select:disabled {
+    cursor: not-allowed;
+    background-color: #eeebeb;
+    color: #252525;
+  }
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #A5A5A5;
+    text-align: start;
+  }
+}
+
+.dots {
+  transform: translateY(10%);
+  margin-right: 7px;
+  div {
+    color: #A5A5A5;
+    display: block;
+    height: 5px;
+  }
+}
+
+.initial-input, .output {
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  outline: red solid 1px;
+}
